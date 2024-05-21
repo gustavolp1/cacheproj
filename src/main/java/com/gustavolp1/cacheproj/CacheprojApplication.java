@@ -1,5 +1,6 @@
 package com.gustavolp1.cacheproj;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,7 +33,7 @@ public class CacheprojApplication {
 	}
 }
 
-record Product(Long id, String name, String description) {
+record Product(Long id, String name, String description) implements Serializable {
 }
 
 @Service
